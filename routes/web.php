@@ -7,6 +7,7 @@ use App\Http\Controllers\Home2Controller;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SysBuildController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -40,6 +41,8 @@ Route::get('/elearning', [ElearningController::class, 'index']);
 Route::get('/delivery', [DeliveryController::class, 'index']);
 
 Route::get('/encyclopedia', [EncyclopediaController::class, 'index']);
+
+Route::get('/sysbuilder', [SysBuildController::class, 'index']);
 
 // Route::get('/profile', function () {
 //     return view('profile');

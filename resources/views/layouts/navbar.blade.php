@@ -25,9 +25,28 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('/delivery') }}">Delivery</a>
                     </li>
-                    <li class="nav-item">
+
+
+                        <li class="nav-item dropdown" style="display: block;
+                        padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+                        font-size: var(--bs-nav-link-font-size);
+                        font-weight: var(--bs-nav-link-font-weight);
+                        color: var(--bs-nav-link-color);
+                        text-decoration: none;
+                        background: none;
+                        border: 0;
+                        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out; display: list-item;
+    text-align: -webkit-match-parent;">
+                            <a href="#" role="button" data-bs-toggle="dropdown">Encyclopedia</a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="{{ url('/encyclopedia') }}">Encyclopedia</a></li>
+                                <li><a class="dropdown-item" href="{{ ('/sysbuilder') }}">System Builder</a></li>
+                            </ul>
+                        </li>
+                    
+                    {{-- <li class="nav-item">
                         <a class="nav-link" href="{{ url('/encyclopedia') }}">Encyclopedia</a>
-                    </li>
+                    </li> --}}
                 </ul>
 
                 <!-- Right Side Of Navbar -->

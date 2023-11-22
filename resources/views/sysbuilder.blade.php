@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        
+        <div class=""></div>
     </div>
     <div class="card" style="width: 18rem;">
         <img src="{{ asset('assets/img/cool.png') }}" class="card-img-top" alt="...">
