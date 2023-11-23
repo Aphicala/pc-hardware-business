@@ -1,6 +1,36 @@
 @extends('layouts.app')
 
 @section('content')
+
+    {{-- New Section || Remake --}}
+    <div class="container-fluid text-light" style="padding-top: 4rem ">
+        <div class="row">
+            <div class="col-4">
+                <img src="{{ asset('assets/img/cool.png') }}" class=" img-fluid rounded-circle" alt="" style="padding-bottom: 1rem">
+                @guest
+                    @if (Route::has('login'))
+                        <p style="font-size: 24px">Guest Account</p>
+                    @endif
+                    @if (Route::has('Register'))
+                        <p style="font-size: 24px">Guest Account</p>
+                    @endif
+                @else
+                    <p style="font-size: 24px">{{ Auth::user()->name }}</p>
+                @endguest
+                <div style="padding: 1 0">
+                    <button>Edit Profile</button>
+                </div>
+                <div>
+                    <form action="">
+                        {{-- Form content here --}}
+                    </form>
+                </div>
+            </div>
+            <div class="col-8"></div>
+        </div>
+    </div>
+
+
     <div class="container-fluid text-light" style="padding: 4rem 2rem 2rem; background-color: rgba(0, 0, 0, 0.880) ">
         <div class="row">
             <div class="col-3">
